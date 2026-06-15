@@ -3,33 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LogicLabs</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: #0f0f0f;
-      color: #f0f0f0;
-      font-family: 'Courier New', monospace;
-    }
-    h1 {
-      font-size: 3rem;
-      letter-spacing: 0.1em;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1rem;
-      color: #888;
-      letter-spacing: 0.05em;
-    }
-  </style>
+  <title>LogicLabs — We build, teach, and play.</title>
+  <meta name="description" content="LogicLabs is a Georgian coding studio. We build websites, create games, and teach people how to code.">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>LogicLabs</h1>
-  <p>Under construction</p>
+
+  <header>
+    <div class="container">
+      <span class="logo">LogicLabs</span>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <a href="#games">Games</a>
+        <a href="#lectures">Lectures</a>
+        <a href="#work">Our Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-label">Based in Georgia</div>
+        <h1>We build digital things that actually work.</h1>
+        <p>LogicLabs is a small creative coding studio. We design and build websites for businesses, make browser games for fun, and run coding courses for people who want to learn.</p>
+      </div>
+    </section>
+
+    <section id="games">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Games</div>
+          <h2>Made for fun, built with care.</h2>
+          <p>We make browser games you can play right now — no downloads, no installs. Just open and play.</p>
+        </div>
+        <div class="grid" id="games-grid"></div>
+      </div>
+    </section>
+
+    <section id="lectures">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Coding Lectures</div>
+          <h2>Learning to code, without the headache.</h2>
+          <p>Our lectures and workshops are built for beginners. No experience needed — just curiosity.</p>
+        </div>
+        <div class="grid" id="lectures-grid"></div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Our Work</div>
+          <h2>Sites and products built by us.</h2>
+          <p>From small business pages to full web apps — here's what we've shipped for our clients.</p>
+        </div>
+        <div class="grid" id="sites-grid"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Contact</div>
+          <h2>Got a project? Let's talk.</h2>
+        </div>
+        <div class="contact-block">
+          <p>Whether you need a new website, want to join one of our lectures, or just have a question — we'd love to hear from you. We reply within a day.</p>
+          <a class="contact-link" href="mailto:hello@logiclabs.ge">Send us a message</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>LogicLabs © <span id="year"></span></p>
+      <p>logiclabs.ge</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="data/games.js"></script>
+  <script src="data/lectures.js"></script>
+  <script src="data/sites.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
 </body>
 </html>
