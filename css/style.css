@@ -244,6 +244,13 @@ section {
   color: var(--color-text-muted);
 }
 
+.card-tagline {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  font-style: italic;
+  color: var(--color-text);
+}
+
 .card-desc {
   font-size: var(--text-sm);
   color: var(--color-text-muted);

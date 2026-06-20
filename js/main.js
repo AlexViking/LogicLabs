@@ -46,6 +46,7 @@ function renderSites() {
     card.className = "card";
     card.innerHTML = `
       <div class="card-title">${site.name}</div>
+      ${site.tagline ? `<div class="card-tagline">${site.tagline}</div>` : ""}
       <div class="card-meta">${site.year}</div>
       <div class="card-desc">${site.description}</div>
       <div class="tags">${site.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>

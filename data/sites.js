@@ -16,11 +16,12 @@ const sites = [
     year: 2025
   },
   {
-    name: "SkillSwap",
-    description: "A community site where people trade skills — teach what you know, learn what you don't.",
+    name: "Swapp",
+    tagline: "Don't buy it. Swap it.",
+    description: "Swapp is a local bartering app where people trade items directly instead of buying new. List something you no longer need, pick what you'd offer, then swipe through nearby items — swipe right to propose a swap. When two people both want each other's stuff, it's a match, and you arrange the trade in chat. From old clothes and electronics to furniture, tools, cars, and even land — if someone wants it, Swapp helps you swap it.",
     url: "/product/swapp",
-    image: "assets/sites/skillswap.png",
-    tags: ["community", "marketplace"],
+    image: "assets/sites/swapp.png",
+    tags: ["bartering", "local", "mobile app", "sustainability"],
     year: 2026
   },
 ];
