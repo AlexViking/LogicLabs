@@ -49,7 +49,7 @@ function renderSites() {
       <div class="card-meta">${site.year}</div>
       <div class="card-desc">${site.description}</div>
       <div class="tags">${site.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>
-      ${site.url ? `<a class="card-link" href="${site.url}" target="_blank" rel="noopener">Visit →</a>` : ""}
+      ${site.url ? `<a class="card-link" href="${site.url}" ${site.url.startsWith("http") ? 'target="_blank" rel="noopener"' : ""}>Visit →</a>` : ""}
     `;
     grid.appendChild(card);
   });

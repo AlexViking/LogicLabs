@@ -18,7 +18,7 @@ const sites = [
   {
     name: "SkillSwap",
     description: "A community site where people trade skills — teach what you know, learn what you don't.",
-    url: "https://skillswap.ge",
+    url: "/product/swapp",
     image: "assets/sites/skillswap.png",
     tags: ["community", "marketplace"],
     year: 2026
